@@ -3,6 +3,7 @@
 
 	import { getCurrentDateTime } from '$utils/fetch-time';
 	import { Data } from '$constants/index.js';
+	import { faker } from '@faker-js/faker';
 
 	export let selectedId;
 	let isStaticMode = true;
@@ -36,7 +37,7 @@
 			<label for="inputEmail4" class="form-label">Creator</label>
 			<input
 				type="email"
-				value="Alex Canales Bonilla"
+				value={faker.name.firstName() + " " + faker.name.lastName()}
 				class="form-control"
 				disabled
 				id="inputEmail4"
@@ -44,7 +45,7 @@
 		</div>
 		<div class="col-md-6 my-1 mt-4">
 			<label for="inputEmail4" class="form-label">Previous Update By</label>
-			<input type="email" value="Matt Stonie" class="form-control" disabled id="inputEmail4" />
+			<input type="email" value={faker.name.firstName() + " " + faker.name.lastName()} class="form-control" disabled id="inputEmail4" />
 		</div>
 		<div class="col-md-6 my-1">
 			<label for="inputEmail4" class="form-label">Created At</label>

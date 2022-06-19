@@ -4,15 +4,14 @@
 	const projectList = [
 		{
 			id: 0,
-			name: "Mapping UI Github",
-			link: "https://github.com/canaleal/Capstone_Map_Client",
+			name: "Detail",
+			link: "detail",
 		},
 		{
 			id: 1,
-			name: "Pothole Object Detection",
-			link: "https://github.com/canaleal/PotholeObjectDetection",
-		},
-		{ id: 2, name: "Project Capstone", link: "https://github.com/canaleal/Capstone" },
+			name: "List",
+			link: "list",
+		}
 	];
 
 	const applicationToolsList = [
@@ -76,7 +75,7 @@
 
 			{#each projectList as item}
 				<div key={item.id} class="my-2">
-					<a href={`#${item.link}`} target="_blank" rel="noreferrer" class="text-sm  hover:underline">{item.name}</a>
+					<a href={`${item.link}`} class="text-sm  hover:underline">{item.name}</a>
 				</div>
 			{/each}
 		</div>

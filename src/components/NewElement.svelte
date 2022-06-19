@@ -3,6 +3,7 @@
 
 	import { getCurrentDateTime } from '$utils/fetch-time';
 	import { Data } from '$constants/index.js';
+	import { faker } from '@faker-js/faker';
 
 	let imageUrl = '';
 	function preview() {

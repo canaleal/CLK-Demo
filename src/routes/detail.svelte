@@ -9,11 +9,13 @@
 	import NewElement from '$components/NewElement.svelte';
 	import UpdateElement from '$components/UpdateElement.svelte';
 	import Footer from '$components/Footer.svelte';
-	import Tools from '$components/Tools.svelte';
+	import Header from '$components/Header.svelte';
 	import AddPage from '$components/AddPage.svelte'; 
 	import Filters from "$components/Filters.svelte";
+	import Pagenation from '$components/Pagenation.svelte';
 
 	import { Data } from '$constants/index.js';
+
 
 	let formType = 0;
 
@@ -39,7 +41,43 @@
 </svelte:head>
 
 <Navbar />
+<Filters />
+<Header />
+<AddPage />
 
+
+<div class="container-fluid px-4 py-4 ">
+	<div class="row">
+		<div class="col-4">
+			<button on:click={() => onFormTypeChange(1)} class="btn btn-success w-100"
+				>Create New Element</button
+			>
+
+			<ul class="list-group my-1">
+				{#each { length: 25 } as _, i}
+					<button
+						on:click={() => onListItemClick(0, i)}
+						type="button"
+						class="list-group-item list-group-item-action "
+						>Item # {i} : {getRandomStringFromArray(Data)}</button
+					>
+				{/each}
+			</ul>
+			<Pagenation/>
+
+		
+		</div>
+		<div class="col-8">
+			{#if formType == 0}
+				<UpdateElement {selectedId} />
+			{:else if formType == 1}
+				<NewElement />
+			{:else}
+				<!-- else content here -->
+			{/if}
+		</div>
+	</div>
+</div>
 
 <Footer />
 
