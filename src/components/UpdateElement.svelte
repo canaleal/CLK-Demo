@@ -5,7 +5,7 @@
 	import { Data } from '$constants/index.js';
 	import { faker } from '@faker-js/faker';
 
-	export let selectedId;
+	export let selectedId = "Example";
 	let isStaticMode = true;
 	let imageUrl = '';
 	function preview() {

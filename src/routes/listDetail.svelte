@@ -32,8 +32,6 @@
 		const randomIndex = Math.floor(Math.random() * array.length);
 		return array[randomIndex];
 	};
-
-    
 </script>
 
 <svelte:head>
@@ -42,41 +40,11 @@
 </svelte:head>
 
 <Navbar />
-<Filters />
 <Header />
 <AddPage />
 
 <div class="container-fluid px-4 py-4">
-    <table class="table  table-hover table-striped">
-        <thead>
-          <tr>
-            <th scope="col">item</th>
-            <th scope="col">Title</th>
-            <th scope="col">Type</th>
-            <th scope="col">Created By</th>
-            <th scope="col">Updated By</th>
-            <th scope="col">Created At</th>
-            <th scope="col">Last Update At</th>
-          </tr>
-        </thead>
-        <tbody>
-            {#each { length: 10 } as _, i}
-                    <tr role="button" on:click={() => {location.pathname = '/listDetail'}}>
-                        <th scope="row">{i}</th>
-                        <td>{faker.company.companyName()}</td>
-                        <td>{getRandomStringFromArray(Data)}</td>
-                        <td>{faker.name.firstName() + " " + faker.name.lastName()}</td>
-                        <td>{faker.name.firstName() + " " + faker.name.lastName()}</td>
-                        <td>{faker.date.past()}</td>
-                        <td>{faker.date.past()}</td>
-                    </tr>
-				{/each}
-       
-         
-        </tbody>
-      </table>
-
-      <Pagenation />
+    <UpdateElement />
 </div>
 
 <Footer />
