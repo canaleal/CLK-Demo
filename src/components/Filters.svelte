@@ -42,6 +42,16 @@
     <form class="row ">
 
         <h5>Filters</h5>
+
+		<div class="col-md-2 my-1">
+            <label for="inputEmail4" class="form-label">Element Id</label>
+            <input
+                type="text"
+                value=""
+                class="form-control"
+                id="inputEmail4"
+            />
+        </div>
 			
         <div class="col-md-2 my-1">
 			<label for="componentState" class="form-label">Creator</label>
@@ -53,8 +63,8 @@
 			</select>
 		</div>
 
-        <div class="col-md-2 my-1">
-			<label for="componentState" class="form-label">Last Update by</label>
+		<div class="col-md-2 my-1">
+			<label for="componentState" class="form-label">Last Update By</label>
 			<select id="componentState" class="form-select">
 				<option selected>Choose...</option>
                 {#each { length: 25 } as _, i}
@@ -63,6 +73,7 @@
 			</select>
 		</div>
 
+       
         <div class="col-md-2 my-1">
 			<label for="componentState" class="form-label">Component Type</label>
 			<select id="componentState" class="form-select">
@@ -82,6 +93,17 @@
                 id="inputEmail4"
             />
         </div>
+
+		<div class="col-md-2 my-1">
+			<label for="componentState" class="form-label">Last Update by</label>
+			<select id="componentState" class="form-select">
+				<option selected>Choose...</option>
+                {#each { length: 25 } as _, i}
+					 <option>{faker.name.firstName()} {faker.name.lastName()}</option>
+                {/each}
+			</select>
+		</div>
+
 
         <div class="col-md-2 my-1">
             <label for="inputEmail4" class="form-label">Last Update At</label>
@@ -105,6 +127,46 @@
             />
         </div>
 
+		<div class="col-md-2 my-1">
+			<label for="componentState" class="form-label">Has Additional Comments</label>
+			<select id="componentState" class="form-select">
+				<option selected>Choose...</option>
+				<option>Yes</option>
+				<option>No</option>
+			</select>
+		</div>
+
+		<div class="col-md-2 my-1">
+			<label for="componentState" class="form-label">Has Web Link</label>
+			<select id="componentState" class="form-select">
+				<option selected>Choose...</option>
+				<option>Yes</option>
+				<option>No</option>
+			</select>
+		</div>
+
+		<div class="col-md-2 my-1">
+			<label for="componentState" class="form-label">Has Web Link</label>
+			<select id="componentState" class="form-select">
+				<option selected>Choose...</option>
+				<option>Yes</option>
+				<option>No</option>
+			</select>
+		</div>
+
+		<div class="col-md-2 my-1">
+			<label for="componentState" class="form-label">Has Image</label>
+			<select id="componentState" class="form-select">
+				<option selected>Choose...</option>
+				<option>Yes</option>
+				<option>No</option>
+			</select>
+		</div>
+
+		<div class=" col-2 mt-4 ">
+			<button type="submit" class="btn btn-outline-danger w-100">Delete Form Details</button>
+		</div>
+		
         <div class="col-2 mt-4">
 			<button type="submit" class="btn btn-success w-100">Search</button>
 		</div>
