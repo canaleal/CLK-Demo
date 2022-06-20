@@ -40,6 +40,17 @@
 
 <Navbar />
 
+<div class="container-fluid px-4 py-4">
+	<div class="row">
+		<div class="col-6 my-1">
+			<button on:click={() => {location.pathname = '/detail'}} class="btn btn-primary w-100">Detail Page Version</button>
+		</div>
+		<div class="col-6 my-1">
+			<button on:click={() => {location.pathname = '/list'}} class="btn btn-danger w-100">List Version</button>
+		</div>
+	</div>
+</div>
+
 
 <Footer />
 

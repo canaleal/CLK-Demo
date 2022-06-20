@@ -123,12 +123,15 @@
 			</div>
 		</div>
 
-		<div class="col-4 mt-4 ">
-			<button type="submit" class="btn btn-outline-danger w-100">Delete Form Details</button>
-		</div>
-
-		<div class="offset-4 col-4 mt-4">
-			<button type="submit" class="btn btn-success w-100">Update Element</button>
-		</div>
+		{#if !isStaticMode}
+			 <div class="col-4 mt-4 ">
+				<button type="submit" class="btn btn-outline-danger w-100">Delete Form Details</button>
+			</div>
+	
+			<div class="offset-4 col-4 mt-4">
+				<button type="submit" class="btn btn-success w-100">Update Element</button>
+			</div>
+		{/if}
+	
 	</form>
 </div>
