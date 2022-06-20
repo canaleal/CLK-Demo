@@ -4,6 +4,7 @@
 	import { getCurrentDateTime } from '$utils/fetch-time';
 	import { Data } from '$constants/index.js';
 	import { faker } from '@faker-js/faker';
+import CommentList from './CommentList.svelte';
 
 	export let selectedId = "Example";
 	let isStaticMode = true;
@@ -132,3 +133,8 @@
 	
 	</form>
 </div>
+
+
+
+
+	<CommentList />

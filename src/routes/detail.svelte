@@ -54,7 +54,7 @@
 			>
 
 			<ul class="list-group my-1">
-				{#each { length: 25 } as _, i}
+				{#each { length: 30 } as _, i}
 					<button
 						on:click={() => onListItemClick(0, i)}
 						type="button"

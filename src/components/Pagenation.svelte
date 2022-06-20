@@ -7,7 +7,7 @@
                     <span aria-hidden="true">&laquo;</span>
                 </a>
             </li>
-            {#each { length: 12 } as _, i}
+            {#each { length: 6 } as _, i}
                 <li class="page-item "><a class="page-link" href="#">{i + 1}</a></li>
             {/each}
 
