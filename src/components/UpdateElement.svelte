@@ -83,11 +83,11 @@
 			</select>
 		</div>
 
-		<div class="col-md-12 my-1">
+		<div class="col-md-6 my-1">
 			<label for="inputTitle" class="form-label">Web Link (Optional)</label>
 			<input type="email" class="form-control" id="inputTitle" disabled={isStaticMode} />
 		</div>
-		<div class="col-md-12 my-1">
+		<div class="col-md-6 my-1">
 			<label for="inputTitle" class="form-label">File Path (Optional)</label>
 			<input type="email" class="form-control" id="inputTitle" disabled={isStaticMode} />
 		</div>
@@ -97,10 +97,7 @@
 			<textarea class="form-control" rows="5" id="comment" name="text" disabled={isStaticMode} />
 		</div>
 
-		<div class="col-12 my-1">
-			<label for="comment" class="form-label">Additional Comments</label>
-			<textarea class="form-control" rows="5" id="comment" name="text" disabled={isStaticMode} />
-		</div>
+	
 
 		<div class="col-12 my-1">
 			<div class="mb-1">

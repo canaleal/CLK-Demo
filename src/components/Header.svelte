@@ -13,13 +13,8 @@
 
 		<div class="col-4 my-1">
 			<p>
-				Aliquip adipisicing velit elit pariatur. Sint pariatur eu quis consequat proident fugiat non
-				dolor ea ea adipisicing duis eu. Cillum voluptate sint cupidatat aute cupidatat nisi ea non
-				consequat cillum. Nisi do adipisicing irure duis veniam sit laboris. Tempor ut sint cillum
-				deserunt deserunt laborum sint nisi non cupidatat. Commodo ad qui sint aliquip. Ad excepteur
-				elit commodo qui nisi et sint tempor dolor do commodo proident. Tempor ea cillum dolore
-				mollit consequat. Amet dolor reprehenderit ex consequat elit in laboris. Elit quis dolore
-				dolore pariatur nostrud laborum.
+				Cillum aliquip duis eu aliquip consectetur aliquip voluptate elit proident incididunt ullamco nulla Lorem commodo.
+				Excepteur fugiat magna et veniam ad et est tempor eiusmod nostrud sunt culpa deserunt labore.
 			</p>
 		</div>
 
