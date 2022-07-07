@@ -1,0 +1,10 @@
+-- When a user loads the list page
+SELECT DISTINCT App_Code FROM page;
+
+-- When a User makes a search using the search bar
+-- select base comments
+SELECT * FROM page_comments WHERE Page_App_Code is <app_code> AND Parent_Comment_ID is NULL;
+
+-- When a User clicks a comment to go to the details page
+-- fetch replies to the parent comment
+SELECT * FROM page_comments WHERE Parent_Comment_ID = <comment_id>;
